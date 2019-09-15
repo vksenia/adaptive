@@ -1187,7 +1187,6 @@
 			display: block;
 			position: relative;
 			z-index: 3;
-			width: 1530px;
 			margin: 0 auto;
 			
 			font-family: OpenSans Bold,Arial,sans-serif;
@@ -1203,6 +1202,7 @@
 		}
 
 		.name-slogan {
+			display: flex;
 			margin-left: 23%;
 		}
 
@@ -1272,14 +1272,18 @@
 			color: #ffffff;
 		}
 
+		.main-content {
+			display: flex;
+			flex-direction: column;
+		}
+
 		.categories {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
 			width: 100%;
 			position: relative;
-			z-index: 3;
-			padding-top: 100px;
+			padding-top: 25px;
 		}
 
 		.categories::before {
@@ -1289,7 +1293,7 @@
 			background-image:  url(img/footballer_566.png);
 			background-repeat: no-repeat;
 			
-			width: 555px;
+			width: 565px;
 			height: 905px;
 			left: 390px;
 			top: -85px;
@@ -1302,13 +1306,13 @@
 			color: #e7e7e7;
 
 			background-color: #ffffff;
-			margin-left: 1000px;
+			padding-left: 45px;
 		}
 
 		.athlets {
 			display: flex;
 			flex-wrap: wrap;
-			position: relative;
+			
 		}
 
 		.athlets-number {
@@ -1317,7 +1321,7 @@
 			color: #000000;
 
 			margin-top: 100px;
-			margin-left: 1000px;
+			padding-left: 45px;
 		}
 
 		.athlets-number::after {
@@ -1350,7 +1354,8 @@
 			color: #000000;
 			margin-bottom: 30px;
 			
-			margin-left: 1000px;
+			display: flex;
+			flex-wrap: wrap;
 		}
 
 		.collaboration {
@@ -1371,7 +1376,7 @@
 			color: #9173e6;
 
 			margin-top: 100px;
-			margin-left: 1000px;
+			
 		}
 
 		.growth-athlets::after {
@@ -1404,7 +1409,7 @@
 			font-size: 20px;
 			color: #c1c1c1;
 			margin-bottom: 30px;
-			margin-left: 1000px;
+			
 		}
 
 		.players {
@@ -1422,9 +1427,12 @@
 			display: flex;
 			position: absolute;
 			z-index: 5;
+			background-image: url(img/basketballer_991.png);
 
 			width: 1000px;
-			height: 790px;
+			height: 815px;
+			right: 125px;
+			top: 10px;
 		}
 
 		.play-heading {
@@ -1434,7 +1442,7 @@
 			color: #e7e7e7;
 
 			background-color: #ffffff;
-			margin-left: 180px;
+			margin-bottom: 110px;
 		}
 
 		.athlets-players {
@@ -1449,7 +1457,7 @@
 			color: #000000;
 
 			margin-top: 100px;
-			margin-left: 180px;
+			
 		}
 
 		.players-number::after {
@@ -1481,11 +1489,50 @@
 			font-size: 20px;
 			color: #000000;
 			margin-bottom: 30px;
-			margin-left: 180px;
+		
+		}
+
+		.players-growth {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #0a0e34;
+
+		}
+
+		.growth-players {
+			font-family: OpenSans Bold,Arial,sans-serif;
+			font-size: 18px;
+			color: #c1c1c1;
+			
+      margin-top: 100px;
+			
+		}
+
+		.growth-players::after {
+		  content: "";
+			display: block;
+			width: 18px;
+			height: 5px;
+			background-color: #ffffff;
+			border-radius: 25%;
+
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 7px;
+			margin-bottom: 35px;
+		}
+
+		.growth-text-players {
+			font-family: OpenSans Regular,Arial,sans-serif;
+			font-size: 20px;
+			color: #c1c1c1;
+			margin-bottom: 30px;
+			
 		}
 
 		.active-img {
-			width: 100%
+			width: 100%;
+			max-width: 1920px;
 		}
 }
 		
