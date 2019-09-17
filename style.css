@@ -5,6 +5,11 @@
 	padding: 0px;
 }
 
+ img {
+	display: block;
+	box-sizing: border-box;
+}
+
  @media(max-width: 640px) {
 	.header {
 		background-image: url(img/football_767.jpg);
@@ -21,6 +26,7 @@
 
 		padding-top: 30px;
 		padding-bottom: 80px;
+		padding-right: 80px;
 	}
 
 	.header::after {
@@ -55,14 +61,14 @@
 		color: #2466d3;
 	}
 
-	.slogan {
+	h1 {
 		width: 300px;
 		color: #ffffff;
 		display: block;
 		position: relative;
 		z-index: 3;
-		margin: 0 auto;
-
+		margin: auto;
+		margin-bottom: 40px;
 
 		font-size: 20px;
 		text-transform: uppercase;
@@ -71,7 +77,8 @@
 
 	.slogan-title {
 		text-align: left;
-		
+		display: block;
+		min-width: 215px;
 		margin-top: 68px;
 		margin-bottom: 15px;
 		margin-left: 20px;
@@ -81,11 +88,11 @@
 	}
 
 	 .name-slogan {
-	 	display: block;
+	 	display: flex;
 		margin-left: 60px;
 		margin-right: 40px;
 		margin-top: 15px;
-		margin-bottom: 40px;
+		
 	}
 
 	.link-store {
@@ -110,16 +117,13 @@
 	}
 
 	.store-content {
-		padding-top: 40px;
+		margin-top: 40px;
 		margin: auto;
+
 	}
 	
 	.link-store:nth-child(1) {
 		margin-bottom: 15px;
-	}
-
-	.link-store:nth-child(2) {
-		margin-top: 15px;
 	}
 
 	.link-store:hover {
@@ -127,8 +131,8 @@
 	}
 
 	.store-svg {
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
 		margin-right: 10px;
 
 		fill: #ffffff;
@@ -140,8 +144,8 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		padding-right: 80px;
+		align-items: left;
+		
 
 		font-family: OpenSans Regular,Arial,sans-serif;
 		font-size: 8px;
@@ -159,47 +163,38 @@
 		
 		padding-top: 25px;
 		padding-bottom: 55px;
-		}
+	}
 
 	.heading {
 		font-family: OpenSans Bold,Arial,sans-serif;
 		font-size: 50px;
 		color: #e7e7e7;
 		text-transform: uppercase;
+		position: relative;
 		margin-left: 20px;
-		
 	}
 
 	.categories-heading {
 		display: block;
-		position: relative;
 		z-index: 0;
 		height: 300px;
 		}
 
-		.categories {
-			position: relative;
+	.heading::before {
+		content: "";
+		background-image: url(img/footballer_192.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+
+		display: flex;
+		position: absolute;
+		left: 64px;
+		padding-top: 20px;
+		bottom: -315px;
+		width: 190px;
+		height: 290px;
+		z-index: 5;
 		}
-
-
-		.categories::before {
-			content: "";
-			background-image: url(img/footballer_192.png);
-			background-repeat: no-repeat;
-			background-position: center;
-
-			display: flex;
-			position: absolute;
-			z-index: 5;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 10px;
-			min-width: 320px;
-			height: 280px;
-			margin: 65px auto auto 0;
-		}
-
 
 	.athlets {
 		display: flex;
@@ -208,7 +203,8 @@
 		z-index: 2;
 		background-color: #fafafa;
 		justify-content: flex-start;
-		margin-top: -25px;
+		padding-top: 80px;
+		padding-bottom: 55px;
 	}	
 
 	.athlets-number {
@@ -218,7 +214,7 @@
 
     margin-left: 20px;
     margin-right: 10px;
-    margin-top: 80px;
+   
 	}
 
 	.athlets-number::after {
@@ -241,8 +237,7 @@
 		color: #c1c1c1;
 
 		margin-bottom: 10px;
-		margin-top: 80px;
-	}
+		}
 
 	.athlets-text {
 		font-family: OpenSans Regular,Arial,sans-serif;
@@ -250,9 +245,8 @@
 		color: #000000;
 
 		margin-top: 10px;
-		margin-left: 45px;
+		margin-left: 20px;
 		margin-right: 20px;
-		margin-bottom: 55px;
 	}
 
 	.collaboration {
@@ -261,6 +255,8 @@
 		position: relative;
 		justify-content: flex-start;
 		background-color: #f5f4f9;
+		padding-top: 80px;
+		padding-bottom: 55px;
 	}
 
 	.growth {
@@ -269,6 +265,8 @@
 		position: relative;
 		justify-content: flex-start;
 		background-color: #5e42b0;
+		padding-top: 80px;
+		padding-bottom: 55px;
 	}
 
 	.growth-athlets {
@@ -300,7 +298,7 @@
 		color: #dedbed;
 
 		margin-top: 10px;
-		margin-left: 45px;
+		margin-left: 20px;
 		margin-right: 20px;
 		margin-bottom: 55px;
 	}
@@ -317,16 +315,11 @@
 
 	.players-head {
 		display: block;
-		position: relative;
 		z-index: 0;
 		height: 320px;
 	}
 
-	.players {
-		position: relative;
-	}
-
-	.players::before {
+	.play-heading::before {
 		content: "";
 		background-image: url(img/basketballer_302.png);
 		background-repeat: no-repeat;
@@ -335,13 +328,12 @@
 		display: flex;
 		position: absolute;
 		z-index: 5;
-		top: 2px;
-		right: 0px;
-		left: 0px;
-		bottom: 0px;
-		min-width: 300px;
+		
+		left: -10px;
+		bottom: -270px;
+		width: 300px;
 		height: 250px;
-		margin: 55px auto auto 0;
+		padding-top: 20px;
 	}
 
 	.play-heading {
@@ -351,104 +343,8 @@
 		text-transform: uppercase;
 		margin-left: 20px;
 		margin-top: 20px;
-	}
-
-	.players-number {
-		color: #000000;
-		font-family: OpenSans Bold,Arial,sans-serif;
-		font-size: 14px;
-
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-top: 80px;
-	}
-
-	.players-number::after {
-		content: "";
-		display: block;
-		width: 17px;
-		height: 5px;
-		background-color: #5e42b0;
-		border-radius: 25%;
-
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 4px;
-	}
-
-	.players-heading {
-		font-family: OpenSans Bold,Arial,sans-serif;
-		font-size: 23px;
-		text-transform: uppercase;
-		color: #c1c1c1;
-
-		margin-bottom: 10px;
-		margin-top: 80px;
-	}
-
-	.players-text {
-		font-family: OpenSans Regular,Arial,sans-serif;
-		font-size: 15px;
-		color: #000000;
-
-		margin-top: 10px;
-		margin-left: 45px;
-		margin-right: 20px;
-		margin-bottom: 55px;
-	}
-
-	.players-growth {
-		display: flex;
-		flex-wrap: wrap;
 		position: relative;
-		justify-content: flex-start;
-		background-color: #5e42b0;
 	}
-	
-	.growth-players {
-		color: #ffffff;
-		font-family: OpenSans Bold,Arial,sans-serif;
-		font-size: 14px;
-
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-top: 80px;
-	}
-
-	.growth-players::after {
-		content: "";
-		display: block;
-		width: 17px;
-		height: 5px;
-		background-color: #ffffff;
-		border-radius: 25%;
-
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 4px;
-	}
-
-	.growth-heading {
-		font-family: OpenSans Bold,Arial,sans-serif;
-		font-size: 23px;
-		text-transform: uppercase;
-		color: #c1c1c1;
-
-		margin-bottom: 10px;
-		margin-top: 80px;
-	}
-
-	.growth-text-players {
-		font-family: OpenSans Regular,Arial,sans-serif;
-		font-size: 15px;
-		color: #ffffff;
-
-		margin-top: 10px;
-		margin-left: 45px;
-		margin-right: 20px;
-		margin-bottom: 55px;
-	}
-	
 
 	.active-img {
 		width: 100%;
@@ -487,6 +383,11 @@
 		margin-top: 4px;
 	}
 
+	.active-content {
+		padding-top: 20px;
+		padding-bottom: 80px;
+	}
+
 	.active-heading {
 		font-family: OpenSans Bold,Arial,sans-serif;
 		font-size: 28px;
@@ -494,7 +395,6 @@
 		color: #e7e7e7;
 		margin-left: 20px;
 		margin-bottom: 25px;
-		margin-top: 20px;
 	}
 
 	.active-text {
@@ -502,7 +402,7 @@
 		font-size: 15px;
 		color: #000000;
 
-		margin-bottom: 80px;
+		
 		margin-left: 20px;
 		margin-right: 25px;
 	}
@@ -544,7 +444,7 @@
 
 	.svg {
 		width: 55px;
-		height: 50px;
+		height: 40px;
 		position: relative;
 		z-index: 3;
 		fill: #ffffff;
@@ -557,14 +457,17 @@
 		background-color: #6a4bc2;
 		background-size: 75px 75px;
 		background-position: center center;
-
+		border-radius: 25%;
+		background: linear-gradient(to top right left bottom, #52389e, #13008c);
 		margin: auto;
 		}
 
   .text {
   	display: flex;
   	flex-wrap: wrap;
-  	padding-top: 55px;
+  	flex-direction: column;
+  	margin-top: 55px;
+  	margin-bottom: 75px;
   }
 
   .footer-text {
@@ -647,7 +550,7 @@
 		color: #2466d3;
 	}
 
-	.slogan {
+	h1 {
 		display: block;
 		box-sizing: border-box;
 		position: relative;
@@ -657,14 +560,14 @@
 		margin: 0 auto;
 
 		font-family: OpenSans Bold,Arial,sans-serif;
-		font-size: 60px;
+		font-size: 64px;
 		text-transform: uppercase;
 	}
 
 	.slogan-title {
 		text-align: left;
 
-		font-size: 60px;
+		font-size: 64px;
 		
 		margin-top: 85px;
 		margin-bottom: 25px;
@@ -672,7 +575,7 @@
 
 	.name-slogan {
 		font-family: OpenSans Bold,Arial,sans-serif;
-		font-size: 60px;
+		font-size: 64px;
 		text-transform: uppercase;
 
 		display: flex;
@@ -686,9 +589,9 @@
 	.store-content{
 		display: flex;
 		flex-wrap: nowrap;
-		margin-top: 315px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-top: 310px;
+		justify-content: space-around;
+		padding-left: 55px;
 	}
 
 	.link-store {
@@ -696,9 +599,8 @@
 		width: 310px;
 		position: relative;
 		z-index: 3;
-		justify-content: space-around;
-	  
-		background-size: 75px 310px;
+		
+	  background-size: 80px 310px;
 		background-color: #5e42b0;
 		border: 1px solid #5e42b0;
 		border-radius: 25px;
@@ -715,8 +617,8 @@
 	}
 
 	.store-svg {
-		width: 45px;
-		height: 45px;
+		width: 40px;
+		height: 40px;
 		margin-right: 30px;
 
 		fill: #ffffff;
@@ -728,9 +630,8 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		padding-right: 60px;
-
+		align-items: left;
+		
 		font-family: OpenSans Light,Arial,sans-serif;
 		font-size: 14px;
 		text-transform: uppercase;
@@ -1711,6 +1612,9 @@
 	  	margin: auto;
 	  }
 	}
+
+
+	
 		
 
 
