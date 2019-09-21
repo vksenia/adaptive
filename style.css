@@ -1283,7 +1283,7 @@
 			flex-wrap: wrap;
 			flex-direction: column;
 			justify-content: center;
-			align-items: center;
+			align-items: left;
 
 			font-family: OpenSans Regular,Arial,sans-serif;
 			font-size: 14px;
@@ -1303,7 +1303,6 @@
 		.main-content {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-around;
 			width: 100%;
 		}
 
@@ -1312,7 +1311,7 @@
 			flex-wrap: wrap;
 			flex-direction: column;
 			width: 100%;
-			position: relative;
+		
 			padding-top: 25px;
 		}
 
@@ -1338,12 +1337,14 @@
 			background-color: #ffffff;
 			padding-left: 45px;
 			margin-right: 0;
+
 		}
 
 		.athlets {
 			display: flex;
 			flex-wrap: wrap;
-			
+			margin-top: 100px;
+			margin-bottom: 65px;
 		}
 
 		.athlets-number {
@@ -1351,7 +1352,6 @@
 			font-size: 18px;
 			color: #000000;
 
-			margin-top: 100px;
 			padding-left: 45px;
 		}
 
@@ -1375,7 +1375,6 @@
 			text-transform: uppercase;
 			color: #c1c1c1;
 
-			margin-top: 100px;
 			margin-left: 10px;
 		}
 
@@ -1384,6 +1383,7 @@
 			font-size: 20px;
 			color: #000000;
 			margin-bottom: 30px;
+			padding-left: 45px;
 			
 			display: flex;
 			flex-wrap: wrap;
@@ -1399,6 +1399,8 @@
 			display: flex;
 			flex-wrap: wrap;
 			background-color: #5e42b0;
+
+			margin-bottom: 65px;
 		}
 
 		.growth-athlets {
@@ -1571,8 +1573,9 @@
 			flex-wrap: nowrap;
 		}
 
-		.active-img {
-			
+		.be-active:nth-child(2) {
+			flex-direction: row-reverse;
+			margin-left: -25px;
 		}
 
 		.active-block {
@@ -1589,6 +1592,8 @@
 			margin-top: 215px;
 			margin-left: -85px;
 		}
+
+		
 
 		.active-number {
 			color: #ffffff;
@@ -1617,12 +1622,15 @@
 			margin-left: 50px;
 		}
 
+		.active-content:nth-child(2) {
+			margin-right: 50px;
+		}
+
 		.active-heading {
 			font-family: OpenSans Bold,Arial,sans-serif;
 			font-size: 80px;
 			text-transform: uppercase;
 
-			
 			margin-top: 250px;
 			color: #e7e7e7;
 		}
@@ -1667,12 +1675,12 @@
 		.footer-content {
 			display: flex;
 			flex-wrap: nowrap;
-			margin: auto;
+			justify-content: center;
 		}
 
 		.svg {
-			width: 100px;
-			height: 90px;
+			width: 90px;
+			height: 80px;
 			position: relative;
 			z-index: 3;
 			fill: #ffffff;
@@ -1687,6 +1695,7 @@
 			background-size: 140px 165px;
 			background-position: center center;
  			border-radius: 15%;
+ 			padding: 20px 10px;
 		}
 
 		.text {
@@ -1694,6 +1703,7 @@
 			flex-wrap: wrap;
 			flex-direction: column;
 			margin-left: 30px;
+			align-items: left;
 		}
 
 		.footer-text {
@@ -1715,13 +1725,13 @@
 
 			position: relative;
 			z-index: 3;
-			margin: auto;
 		}
 
 		.footer-svg-text {
 			width: 215px;
 	  	height: 60px;
 	  	fill: #ffffff;
+	  	display: block;
 	  	position: relative;
 	  	z-index: 3;
 	  	margin: auto;
