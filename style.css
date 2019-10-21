@@ -1589,14 +1589,14 @@
 			box-sizing: border-box;
 			width: 165px;
 			height: 155px;
-			position: relative;
+			position: absolute;
 			z-index: 2;
+			justify-content: center;
 
 			background-color: #5e42b0;
-			text-align: center;
+			
 			padding-top: 60px;
 			margin-top: 215px;
-			margin-left: 
 		}
 
 		.active-number {
@@ -1623,7 +1623,8 @@
 			flex-wrap: wrap;
 			flex-direction: column;
 		  padding-left: 110px;
-
+		  box-sizing: border-box;
+		  width: 100%;
 		}
 
 		.active-content:nth-child(2) {
