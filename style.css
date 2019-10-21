@@ -1572,8 +1572,8 @@
 			flex-direction: row-reverse;
 		}
 
-		.active-img {
-			width: 100%;
+		.img {
+			width: 50%;
 			}
 
 		.active-block {
