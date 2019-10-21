@@ -1624,7 +1624,7 @@
 			flex-direction: column;
 		  padding-left: 110px;
 		  box-sizing: border-box;
-		  width: 100%;
+		  width: 50%;
 		}
 
 		.active-content:nth-child(2) {
