@@ -1238,8 +1238,6 @@
 		.store-content{
 			display: flex;
 			flex-wrap: nowrap;
-			padding-top: 15px;
-			padding-bottom: 15px;
 		}
 
 		.link-store {
@@ -1247,11 +1245,11 @@
 			width: 310px;
 			position: relative;
 			z-index: 3;
-		  margin-top: 220px;
-			margin-bottom: 110px;
+		  margin-top: 200px;
+			margin-bottom: 100px;
 		
 
-			background-size: 80px 310px;
+			background-size: 110px 310px;
 			background-color: #5e42b0;
 			border: 1px solid #5e42b0;
 			border-radius: 25px;
@@ -1282,14 +1280,11 @@
 			flex-wrap: wrap;
 			flex-direction: column;
 			justify-content: center;
-			align-items: left;
-
+			
 			font-family: OpenSans Regular,Arial,sans-serif;
 			font-size: 14px;
 			text-transform: uppercase;
 			color: #ffffff;
-
-			margin-right: 70px;
 		}
 
 		.store {
@@ -1582,7 +1577,8 @@
 			}
 
 		.active-block {
-			display: block;
+			display: flex;
+			margin: 0px 0px auto;
 			box-sizing: border-box;
 			width: 165px;
 			height: 155px;
@@ -1593,7 +1589,7 @@
 			text-align: center;
 			padding-top: 60px;
 			margin-top: 215px;
-			margin-left: -85px;
+			margin-left: 
 		}
 
 		.active-number {
