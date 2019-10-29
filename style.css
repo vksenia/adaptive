@@ -92,7 +92,7 @@
 		margin-left: 60px;
 		margin-right: 40px;
 		margin-top: 15px;
-		
+		margin-bottom: 90px;
 	}
 
 	.link-store {
@@ -117,9 +117,7 @@
 	}
 
 	.store-content {
-		margin-top: 40px;
 		margin: auto;
-
 	}
 	
 	.link-store:nth-child(1) {
@@ -127,7 +125,7 @@
 	}
 
 	.link-store:hover {
-		border: 2px solid #2466d3;
+		background-color: #2466d3;
 	}
 
 	.store-svg {
@@ -675,7 +673,7 @@
 		text-align: left;
 
 		font-size: 64px;
-		
+
 		margin-top: 85px;
 		margin-bottom: 25px;
 	}
@@ -687,6 +685,7 @@
 
 		display: flex;
 		margin-left: 100px;
+		margin-bottom: 310px;
 	}
 
 	.link-store {
@@ -696,7 +695,8 @@
 	.store-content{
 		display: flex;
 		flex-wrap: nowrap;
-		margin-top: 310px;
+		
+		margin: auto;
 		justify-content: center;
 	}
 
@@ -721,7 +721,7 @@
 	}
 	
 	.link-store:hover {
-		border: 2px solid #2466d3;
+		background-color: #2466d3;
 	}
 
 	.store-svg {
@@ -1268,7 +1268,7 @@
 		}
 		
 		.link-store:hover {
-			border: 2px solid #2466d3;
+			background-color: #2466d3;
 		}
 
 		.store-svg {
@@ -1318,7 +1318,7 @@
 			width: 565px;
 			height: 910px;
 			top: 25px;
-			left: 190px;
+			left: 3%;
 		}
 
 		.heading {
@@ -1329,7 +1329,7 @@
 
 			background-color: #ffffff;
 			margin-top: 80px;
-			margin-left: 890px;
+			margin-left: 60%;
 		}
 
 		.athlets {
@@ -1345,7 +1345,7 @@
 			font-size: 18px;
 			color: #000000;
 
-			margin-left: 890px;
+			margin-left: 60%;
 		}
 
 		.athlets-number::after {
@@ -1376,7 +1376,7 @@
 		
 			margin-top: 35px;
 			margin-right: 30px;
-			margin-left: 890px;
+			margin-left: 60%;
 		}
 
 		.collaboration {
@@ -1400,7 +1400,7 @@
 			font-size: 18px;
 			color: #000000;
 
-			margin-left: 890px;
+			margin-left: 60%;
 		}
 
 		.growth-athlets::after {
@@ -1432,7 +1432,7 @@
 		
 			margin-top: 35px;
 			margin-right: 30px;
-			margin-left: 890px;
+			margin-left: 60%;
 		}
 
 		.players {
@@ -1457,7 +1457,7 @@
 			width: 995px;
 			height: 820px;
 			
-			right: 20px;
+			right: 3%;
 		}
 
 		.play-heading {
@@ -1518,7 +1518,7 @@
 		
 			margin-top: 35px;
 			margin-left: 30px;
-			margin-right: 1010px;
+			margin-right: 65%;
 		}
 		
 		.players-growth {
@@ -1559,7 +1559,7 @@
 		
 			margin-top: 35px;
 			margin-left: 30px;
-			margin-right: 1010px;
+			margin-right: 65%;
 		}
 
 		.active {
