@@ -10,6 +10,10 @@
 	box-sizing: border-box;
 }
 
+.body {
+	min-width: 320px;
+}
+
 .container {
 	margin: 0 auto;
 }
@@ -786,7 +790,6 @@
 		color: #e7e7e7;
 
 		background-color: #ffffff;
-		margin-top: 80px;
 		margin-left: 290px;
 	}
 
@@ -1154,6 +1157,7 @@
 		position: relative;
 		z-index: 3;
 		margin: auto;
+		margin-bottom: 280px;
 	}
 
   .footer-svg-text {
@@ -1333,7 +1337,6 @@
 			color: #e7e7e7;
 
 			background-color: #ffffff;
-			margin-top: 80px;
 			margin-left: 60%;
 		}
 
